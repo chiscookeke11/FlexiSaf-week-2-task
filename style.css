@@ -19,6 +19,7 @@ nav {
   justify-content: space-between;
   padding: 30px 45px;
   background: #ffffff;
+  flex-wrap: wrap;
 }
 
 nav h1 {
@@ -31,6 +32,8 @@ nav ul {
   list-style: none;
   gap: 10px;
   color: #000000;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 nav ul li {
@@ -63,13 +66,17 @@ nav ul li:hover {
   left: 0;
   width: 100%;
   height: 10%;
-  color: #ffffff;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.hero h2 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
 .students-section {
   width: 100%;
   height: fit-content;
@@ -96,4 +103,29 @@ nav ul li:hover {
 
 .card:hover {
   transform: scale(1.03);
+}
+.flexed-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 20px 100px 20px;
+}
+.flexed-boxes div {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.box-px {
+  width: 300px;
+  background: red;
+}
+.box-em {
+  width: 20em;
+  background: green;
+}
+.box-rem {
+  width: 20rem;
+  background: blue;
 }
